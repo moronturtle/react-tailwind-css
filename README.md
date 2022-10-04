@@ -1,1 +1,3 @@
-# react-tailwind-css
+# installation
+
+### `npm install` / `yarn install`
