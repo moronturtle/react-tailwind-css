@@ -1,8 +1,9 @@
 import './App.css';
 import { useEffect, useState, useMemo } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import About from './About';
-import Home from './Home';
+import About from './Page/About';
+import Home from './Page/Home';
+import ChartResize from './Page/ChartResize';
 
 type PokemenInterfaceProps = {
   sprites?: any;
@@ -44,12 +45,16 @@ function App() {
           <Link to='/'>
             <header className='text-4xl text-yellow-700'>Pokemon Picker</header>
           </Link>
+          <Link to='/cobaresize'>
+            <span className='border-l-pink-800 text-blue-500'>test chart js resize</span>
+          </Link>
         </div>
       </div>
 
       <Routes>
-        <Route path='/about/:slug' element={<About />} />
         <Route path='/' element={<Home pokemons={filteredPokemon} setText={setText} />} />
+        <Route path='/about/:slug' element={<About />} />
+        <Route path='/cobaresize' element={<ChartResize />} />
       </Routes>
     </BrowserRouter>
   );
