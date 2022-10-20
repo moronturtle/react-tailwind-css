@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import About from './Page/About';
 import Home from './Page/Home';
 import ChartResize from './Page/ChartResize';
+import GridLayout from './Page/GridLayout';
 
 type PokemenInterfaceProps = {
   sprites?: any;
@@ -48,6 +49,9 @@ function App() {
           <Link to='/cobaresize'>
             <span className='border-l-pink-800 text-blue-500'>test chart js resize</span>
           </Link>
+          <Link to='/gridlayout'>
+            <span className='border-l-pink-800 text-red-500'>grid layout</span>
+          </Link>
         </div>
       </div>
 
@@ -55,6 +59,7 @@ function App() {
         <Route path='/' element={<Home pokemons={filteredPokemon} setText={setText} />} />
         <Route path='/about/:slug' element={<About />} />
         <Route path='/cobaresize' element={<ChartResize />} />
+        <Route path='/gridlayout' element={<GridLayout />} />
       </Routes>
     </BrowserRouter>
   );
