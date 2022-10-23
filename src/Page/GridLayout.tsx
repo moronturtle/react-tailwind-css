@@ -21,154 +21,12 @@ const GridLayout = () => {
   const LainLagi = WidthProvider(RGL);
 
 
-  const layout = [
+  const lele = [
     { i: 'a', x: 0, y: 0, w: 1, h: 2 },
-    { i: 'b', x: 1, y: 0, w: 3, h: 1 },
+    { i: 'b', x: 1, y: 0, w: 6, h: 1 },
     { i: 'c', x: 4, y: 0, w: 1, h: 2 }
   ];
 
-  const test = [
-    {
-      "x": 0,
-      "y": 0,
-      "w": 2,
-      "h": 5,
-      "i": "0"
-    },
-    {
-      "x": 2,
-      "y": 0,
-      "w": 2,
-      "h": 5,
-      "i": "1"
-    },
-    {
-      "x": 4,
-      "y": 0,
-      "w": 2,
-      "h": 3,
-      "i": "2"
-    },
-    {
-      "x": 6,
-      "y": 0,
-      "w": 2,
-      "h": 4,
-      "i": "3"
-    },
-    {
-      "x": 8,
-      "y": 0,
-      "w": 2,
-      "h": 3,
-      "i": "4"
-    },
-    {
-      "x": 10,
-      "y": 0,
-      "w": 2,
-      "h": 5,
-      "i": "5"
-    },
-    {
-      "x": 0,
-      "y": 3,
-      "w": 2,
-      "h": 3,
-      "i": "6"
-    },
-    {
-      "x": 2,
-      "y": 2,
-      "w": 2,
-      "h": 2,
-      "i": "7"
-    },
-    {
-      "x": 4,
-      "y": 3,
-      "w": 2,
-      "h": 3,
-      "i": "8"
-    },
-    {
-      "x": 6,
-      "y": 3,
-      "w": 2,
-      "h": 3,
-      "i": "9"
-    },
-    {
-      "x": 8,
-      "y": 4,
-      "w": 2,
-      "h": 4,
-      "i": "10"
-    },
-    {
-      "x": 10,
-      "y": 4,
-      "w": 2,
-      "h": 4,
-      "i": "11"
-    },
-    {
-      "x": 0,
-      "y": 6,
-      "w": 2,
-      "h": 3,
-      "i": "12"
-    },
-    {
-      "x": 2,
-      "y": 10,
-      "w": 2,
-      "h": 5,
-      "i": "13"
-    },
-    {
-      "x": 4,
-      "y": 8,
-      "w": 2,
-      "h": 4,
-      "i": "14"
-    },
-    {
-      "x": 6,
-      "y": 6,
-      "w": 2,
-      "h": 3,
-      "i": "15"
-    },
-    {
-      "x": 8,
-      "y": 6,
-      "w": 2,
-      "h": 3,
-      "i": "16"
-    },
-    {
-      "x": 10,
-      "y": 8,
-      "w": 2,
-      "h": 4,
-      "i": "17"
-    },
-    {
-      "x": 0,
-      "y": 12,
-      "w": 2,
-      "h": 4,
-      "i": "18"
-    },
-    {
-      "x": 2,
-      "y": 12,
-      "w": 2,
-      "h": 4,
-      "i": "19"
-    }
-  ];
   const apa = new Array(DEFAULT_PROPS.items);
   console.log('apa', apa);
  
@@ -219,18 +77,22 @@ const GridLayout = () => {
   return (
     <>
 
-      {/* <ReactGridLayout
+      <ReactGridLayout
         className="layout"
-        layouts={{ lg: dataPo , md: dataPo, sm: dataPo, xs: dataPo, xxs: dataPo }}
+        layouts={{ lg: lele , md: lele, sm: lele, xs: lele, xxs: lele }}
         breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
         cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
         //onBreakpointChange={onBreakpointChange}
       >
-        <div key="1" style={{width:'120px', height:'90px', backgroundColor:'red'}}>13232</div>
-        <div key="2" style={{width:'180px', height:'90px', backgroundColor:'blue'}}>2</div>
-        <div key="3" style={{width:'90px', height:'90px', backgroundColor:'yellow'}}>3</div>
-        {generatePosition2Responsive}
-      </ReactGridLayout> */}
+        {/* <div key="c" style={{width:'120px', height:'90px', backgroundColor:'red'}}>13232</div>
+        <div key="a" style={{width:'180px', height:'90px', backgroundColor:'blue'}}>2</div>
+        <div key="b" style={{width:'90px', height:'90px', backgroundColor:'yellow'}}>3</div> */}
+
+        <div key="a" style={{ backgroundColor:'red'}}>13232</div>
+        <div key="b" style={{backgroundColor:'blue'}}>2</div>
+        <div key="c" style={{backgroundColor:'yellow'}}>3</div>
+        {/* {generatePosition2Responsive} */}
+      </ReactGridLayout>
 
        <h1 style={{color:'red'}}>BATASSSSSSSSSSSSSSSSS</h1>
         
