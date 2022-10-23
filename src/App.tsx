@@ -6,6 +6,7 @@ import Home from './Page/Home';
 import ChartResize from './Page/ChartResize';
 import GridLayout from './Page/GridLayout';
 import DashboardDragAndDrop from '../src/Component/DahboardDragAndDrop';
+import Dragpage from './Page/DragPage';
 
 type PokemenInterfaceProps = {
   sprites?: any;
@@ -56,6 +57,9 @@ function App() {
           <Link to='/drag'>
             <span className='border-l-pink-800 text-yellow-500'>drag test</span>
           </Link>
+          <Link to='/drag-component'>
+            <span className='border-l-pink-800 text-yellow-500'>drag pake component</span>
+          </Link>
         </div>
       </div>
 
@@ -65,6 +69,7 @@ function App() {
         <Route path='/cobaresize' element={<ChartResize />} />
         <Route path='/gridlayout' element={<GridLayout />} />
         <Route path='/drag' element={<DashboardDragAndDrop />} />
+        <Route path='/drag-component' element={<Dragpage />} />
       </Routes>
     </BrowserRouter>
   );
